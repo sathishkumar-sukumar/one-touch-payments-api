@@ -29,15 +29,7 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Touch Pouch</title>
 
-        <script type="text/javascript">
-
-            /*function change() {
-                alert("header clicked1");
-                if (document.getElementById("wall1price").name == "wall1priceclicked" || document.getElementById("wall5price").name == "wall5priceclicked" || document.getElementById("wall3price").name == "wall3priceclicked" || document.getElementById("wall7price").name == "wall7priceclicked") {
-                    alert("header clicked");
-                    document.getElementById("header").src = "headercart.png";
-                }
-            }*/
+       <!-- <script type="text/javascript">
             function changeImage(id) {
                 if (document.getElementById(id).name == id+"clicked") {
                     document.getElementById(id).src = "./img/"+id+".png";
@@ -47,28 +39,20 @@
                     document.getElementById(id).src = "./img/" + id + "tick.png";
                     document.getElementById(id).name = id + "clicked";
                 }
-
-                if (document.getElementById("wall1price").name == "wall1priceclicked" || document.getElementById("wall5price").name == "wall5priceclicked" || document.getElementById("wall3price").name == "wall3priceclicked" || document.getElementById("wall7price").name == "wall7priceclicked") {
-                    document.getElementById("header").src = "./img/headercartnew.png";
-                }
-                else{
-                    document.getElementById("header").src = "./img/header.png";
-                }
             }
-        </script>
+        </script>-->
     </head>
     <body>
         <div class="app">
-<!--            <h1>PhoneGap</h1>
-            This is first demo app-->
-
+      <!--      <h1>PhoneGap</h1>-->
 
             <table>
                 <tr>
-                    <a href="finalAuthenticationPage.html">
-                        <img src="./img/header.png" alt="Mountain View" style="width:242px;height:40px;" id="header" name="header">
+                    <a href="cart.html">
+                        <img src="./img/headercart.png" alt="Mountain View" style="width:242px;height:40px;">
                     </a>
                 </tr>
+            <!--
                 <tr>
                     <td><img src="./img/wall1price.png" alt="Mountain View" style="width:120px;height:200px;" id="wall1price" name="wall1price" onclick="changeImage(id)"></td>
                     <td><img src="./img/wall5price.png" alt="Mountain View" style="width:120px;height:200px;" id="wall5price" name="wall5price" onclick="changeImage(id)"></td>
@@ -77,15 +61,8 @@
                     <td><img src="./img/wall3price.png" alt="Mountain View" style="width:120px;height:200px;" id="wall3price" name="wall3price" onclick="changeImage(id)"></td>
                     <td><img src="./img/wall7price.png" alt="Mountain View" style="width:120px;height:200px;" id="wall7price" name="wall7price" onclick="changeImage(id)"></td>
                 </tr>
-            </table>
-            <!--<table>
-                <tr>
-                    <img src="./img/checkout.jpg" style="width:244px;height:30px;" id="checkout" name="checkout">
-                </tr>
             </table>-->
-           <!-- <div id="checkout">
-                <img src="./img/wall7price.png" style="width:120px;height:200px;" id="wall3pricedummy" name="wall3pricedummy" onclick="changeImage(id)">
-            </div>-->
+
             <!--<div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
