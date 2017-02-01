@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Touch Pouch</title>
+    <script type="text/javascript">
+        function pageRedirect(){
+            window.location.href = "finalAuthenticationPage.html";
+        }
+    </script>
+</head>
+<body>
+<div class="app">
+    <div>
+        <div>
+            <img class="headerImage" src="./img/header.png" alt="Mountain View" id="header" name="header" onclick="pageRedirect()">
+        </div>
+        <div id="emptyCartMsg" style="background-color: #b03911"></div>
+        <div>
+            <table class="images">
+                <tr>
+                    <td><img class="checkoutimage" src="./img/checkoutitem1.png" alt="Mountain View" id="checkoutitem1" name="wall1price" onclick="changeImage(id)"></td>
+                </tr>
+                <tr>
+                    <td><img class="checkoutimage" src="./img/checkoutitem2.png" alt="Mountain View" id="checkoutitem2" name="wall5price" onclick="changeImage(id)"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div align="center">
+            <button type="submit" style="font-family:Broadway ;font-size: small; background-color:#666666 " >Sub Total $ 625</button>
+        </div>
+        <div>
+            <button type="submit" style="font-family:Broadway ;font-size: large" onClick="pageRedirect()">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
