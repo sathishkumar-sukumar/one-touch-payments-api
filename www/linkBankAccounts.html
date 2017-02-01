@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Link Bank Accounts</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <script type="text/javascript">
         function display() {
             var mobileNumber = document.getElementById('mobileNumber').value;
@@ -10,7 +11,13 @@
                 document.getElementById("mobileNumberError").innerHTML = "";
                 if (mobileNumber.length == 10 ) {
                     document.getElementById("mobileNumberError").innerHTML = "";
-                    window.location.href = "../html/homePage.html"
+                    if(mobileNumber == "9876543210"){
+                        window.location.href = "linkBankAccountSuccess.html";
+                    }
+                    else{
+                        document.getElementById("mobileNumberError").innerHTML = "No Bank account associated to this number.";
+                    }
+
                 } else {
                     document.getElementById("mobileNumberError").innerHTML = "Please enter valid  mobile number.";
                 }
@@ -20,10 +27,11 @@
         }
         function resetForm() {
             document.getElementById("mobileNumber").value = "";
+            document.getElementById("mobileNumberError").innerHTML = "";
         }
     </script>
 
-    <style>
+<!--    <style>
         .center {
             margin: auto;
             width: 20%;
@@ -92,15 +100,15 @@
                 width: 100%;
             }
         }
-    </style>
+    </style>-->
 
 </head>
 
 <body>
 
-<div class="center">
+<div class="app">
     <div class="imgcontainer">
-        <img src="../images/logo1.png" alt="logo" class="logo">
+        <img src="./img/logo1.png" alt="logo" class="logo">
     </div>
     <div align="center">
         <h3>Link Bank Accounts</h3>

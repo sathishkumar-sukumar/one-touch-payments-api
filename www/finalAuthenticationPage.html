@@ -2,19 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <!--<title>Touch Pouch</title>-->
+    <title>One Touch Payments API - Login Page</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     <title>Authenticating with Bank...</title>
-
     <script type="text/javascript">
         function changeImage() {
             if (document.getElementById("imgClickAndChange").name == "sampleFingerPrint") {
                 document.getElementById("imgClickAndChange").src = "./img/fingerprint2.jpg";
-               // document.getElementById("imgClickAndChange").src = "./img/scanning.gif";
+                // document.getElementById("imgClickAndChange").src = "./img/scanning.gif";
                 setTimeout('redirect()', 3000);
             }
             /*
@@ -36,24 +33,38 @@
         }
     </script>
 
-    <style>
-        .center {
-            margin: auto;
-            width: 200px;
-            border: 4px;
-            padding: 10px;
-            height: 250px;
-        }
-    </style>
 </head>
+
 <body>
-<div class="app">
-<form>
-    <div class="center">
-        <img alt="" src="./img/fingerprint1.jpg" id="imgClickAndChange" name="sampleFingerPrint" border = "4"
-             style="height: 250px; width: 200px; " onclick="changeImage()"/>
-    </div>
-</form>
-    </div>
+
+<!--<form action = "homePage.html" name="loginDetails">-->
+<table style="border: 5px">
+    <td>
+        <div class="app">
+            <div class="imgcontainer">
+                <img src="./img/logo1.png" alt="logo" class="logo">
+            </div>
+            <div align="center">
+                <h3>Place your fingerprint to proceed payment.</h3>
+            </div>
+            <div class="container" >
+                <div><label><b>Username</b></label></div>
+                <div><input type="text" placeholder="Enter Username" name="uname" id="userName"/></div>
+                <div id="userNameError" style="color: #f44336"></div>
+                <div >                     <label><b>Password</b></label></div>
+                <div>
+                    <input type="password" placeholder="Enter Password" name="psw" id="password"/>
+                    <div id="passwordError" style="color: #f44336"></div>
+                    <button type="submit" onClick="display()">Login</button>
+                    <div>
+                        <button type="reset" style="background-color: #f44336" name="Cancel" onclick="resetForm()">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</table>
 </body>
 </html>
