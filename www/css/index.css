@@ -31,8 +31,8 @@ body {
 .app {
     /*background:url(../img/logo.png) no-repeat center top; !* 170px x 200px *!*/
     position:absolute;             /* position in the center of the screen */
-    left:30%;
-    top:10%;
+    left:50%;
+    top:7%;
     height:50px;                   /* text area height */
     width:240px;                   /* text area width */
     text-align:center;
