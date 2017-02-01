@@ -11,15 +11,14 @@
 
     <script type="text/javascript">
         function redirectHome(){
-            window.location.href = "../html/homePage.html";
+            window.location.href = "selectOptions.html";
         }
-
     </script>
 </head>
 <body>
 <div class="app">
-<form>
-    <div class="center">
+
+    <div >
         <h5>
             Amount has been debited from ICICI bank.
             <br/> <br/>
@@ -28,10 +27,10 @@
         <h5>Payment successful with order ID 12345.</h5>
     </div>
     <div >
-        <button type="submit" style="background-color: #51a351" name="Ok"  >Ok</button>
+        <button type="submit" style="background-color: #51a351" name="Ok"  onclick="redirectHome()">Ok</button>
 
     </div>
-</form>
+
 </div>
 </body>
 </html>

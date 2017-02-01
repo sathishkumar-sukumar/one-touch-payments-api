@@ -10,8 +10,10 @@
     <script type="text/javascript">
         function changeImage() {
             if (document.getElementById("imgClickAndChange").name == "sampleFingerPrint") {
+                document.getElementById("paymentText").innerHTML = "Connecting with the bank...";
                 document.getElementById("imgClickAndChange").src = "./img/fingerprint2.jpg";
-                // document.getElementById("imgClickAndChange").src = "./img/scanning.gif";
+                //document.getElementById("imgClickAndChange").src = "./img/scanning.gif";
+
                 setTimeout('redirect()', 3000);
             }
             /*
@@ -44,26 +46,19 @@
             <div class="imgcontainer">
                 <img src="./img/logo1.png" alt="logo" class="logo">
             </div>
-            <div align="center">
-                <h3>Place your fingerprint to proceed payment.</h3>
-            </div>
-            <div class="container" >
-                <div><label><b>Username</b></label></div>
-                <div><input type="text" placeholder="Enter Username" name="uname" id="userName"/></div>
-                <div id="userNameError" style="color: #f44336"></div>
-                <div >                     <label><b>Password</b></label></div>
-                <div>
-                    <input type="password" placeholder="Enter Password" name="psw" id="password"/>
-                    <div id="passwordError" style="color: #f44336"></div>
-                    <button type="submit" onClick="display()">Login</button>
-                    <div>
-                        <button type="reset" style="background-color: #f44336" name="Cancel" onclick="resetForm()">
-                            Cancel
-                        </button>
-                    </div>
+            <div>
+
+                <div >
+                    <img class="scanImage" alt="" src="./img/fingerprint1.jpg" id="imgClickAndChange" name="sampleFingerPrint" border = "4"
+                         onclick="changeImage()"/>
                 </div>
+                <h5>
+                    <div id="paymentText">
+                        Place your finger to proceed payment...
+                    </div>
+
+                </h5>
             </div>
-        </div>
     </td>
 </table>
 </body>

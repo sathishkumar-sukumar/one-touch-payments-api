@@ -97,13 +97,25 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 .headerImage{
-    width:380px;
-    height:50px;
-    margin: auto;
+    width:95%;
+    height:20%;
+    margin: 0px;
+}
+
+.optionheaderImage{
+    width:95%;
+    height:20%;
+    margin: 0px;
 }
 .images{
-    width:190px;
-    height:260px;
+    width:100%;
+    height:18%;
+}
+
+.scanImage{
+    margin-top: 10%;
+    width:50%;
+    height:8%;
 }
 /*Adding additional styles*/
 .center {
@@ -179,10 +191,8 @@ span.psw {
 }
 
 .textContainer{
-    margin: 10px;
-    max-height: 1200px;
-    min-height: 800px;
-    max-width: 420px;
-    min-width: 360px;
+    margin: 0px;
+text-align: left;
+
 
 }

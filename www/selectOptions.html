@@ -10,16 +10,8 @@
     <title>Touch Pouch</title>
 
     <script type="text/javascript">
-
-        /*function change() {
-         alert("header clicked1");
-         if (document.getElementById("wall1price").name == "wall1priceclicked" || document.getElementById("wall5price").name == "wall5priceclicked" || document.getElementById("wall3price").name == "wall3priceclicked" || document.getElementById("wall7price").name == "wall7priceclicked") {
-         alert("header clicked");
-         document.getElementById("header").src = "headercart.png";
-         }
-         }*/
         var count = 0;
-        function changeImage(id) {
+/*        function changeImage(id) {
             if (document.getElementById(id).name == id+"clicked") {
                 document.getElementById("emptyCartMsg").innerHTML="";
                 count--;
@@ -42,12 +34,9 @@
             else{
                 document.getElementById("header").src = "./img/header.png";
             }
-        }
+        }*/
         function pageRedirect(){
-            window.location.href = "productsPage.html"
-           /* }else{
-                document.getElementById("emptyCartMsg").innerHTML="No Items selected in the cart";
-            }*/
+            window.location.href = "productsPage.html";
         }
     </script>
 </head>
@@ -55,18 +44,25 @@
 <div class="app">
     <div>
         <div>
-            <img class="optionheaderImage" src="./img/touchpouch.png" alt="Mountain View" id="header" name="header" onclick="pageRedirect()">
+            <img class="optionheaderImage" src="./img/touchpouch.png" alt="Mountain View" id="header" name="header">
         </div>
-        <div id="emptyCartMsg" style="background-color: #b03911"></div>
         <div>
-            <table class="images">
+            <table>
                 <tr>
-                    <td><img class="images" src="./img/rechargetile.png" alt="Mountain View" id="wall1price" name="wall1price" onclick="changeImage(id)"></td>
-                    <td><img class="images" src="./img/paybilltile.png" alt="Mountain View" id="wall5price" name="wall5price" onclick="changeImage(id)"></td>
+                    <td>
+                        <img class="images" src="./img/rechargetile.png" alt="Mountain View" id="wall1price" name="wall1price" onclick="pageRedirect()">
+                    </td>
+                    <td>
+                        <img class="images" src="./img/paybilltile.png" alt="Mountain View" id="wall5price" name="wall5price" onclick="pageRedirect()">
+                    </td>
                 </tr>
                 <tr>
-                    <td><img class="images" src="./img/booktckstile.png" alt="Mountain View" id="wall3price" name="wall3price" onclick="changeImage(id)"></td>
-                    <td><img class="images" src="./img/onlineshoptile.png" alt="Mountain View" id="wall7price" name="wall7price" onclick="pageRedirect()"></td>
+                    <td>
+                        <img class="images" src="./img/booktckstile.png" alt="Mountain View" id="wall3price" name="wall3price" onclick="pageRedirect()">
+                    </td>
+                    <td>
+                        <img class="images" src="./img/onlineshoptile.png" alt="Mountain View" id="wall7price" name="wall7price" onclick="pageRedirect()">
+                    </td>
                 </tr>
             </table>
         </div>
