@@ -31,24 +31,21 @@ body {
 .app {
     /*background:url(../img/logo.png) no-repeat center top; !* 170px x 200px *!*/
     position:absolute;             /* position in the center of the screen */
-    left:40%;
-    top:1%;
-    height:85px;                   /* text area height */
-    width:290px;                   /* text area width */
+    height:0px;                   /* text area height */
+    width:450px;                   /* text area width */
     text-align:center;
     padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
     margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+    /* offset horizontal: half of text area width */
 }
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
         background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-        /*margin:-300px  0px 75px -198px;                          !* offset horizontal: half of image width and text area width *!*/
-        /*margin: -500px 0px 0px -198px;*/
+     /*   padding:75px 0px 75px 170px;  !* padding-top + padding-bottom + text area = image height *!
+        margin:-90px 0px 0px -198px; */ /* offset vertical: half of image height */
+        margin: 0px 0px 0px 0px;
     }
 }
 
@@ -112,9 +109,9 @@ h1 {
     height:18%;
 }
 .summaryImages{
-  margin:2%;
+    margin:2%;
     width:96%;
-    height:12%;
+    height:14%;
 }
 .scanImage{
     margin-top: 10%;
@@ -201,7 +198,7 @@ span.psw {
 
 .textContainer{
     margin: 0px;
-text-align: left;
+    text-align: left;
 
 
 }
