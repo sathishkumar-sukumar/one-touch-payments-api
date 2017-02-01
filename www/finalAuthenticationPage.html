@@ -10,23 +10,16 @@
     <script type="text/javascript">
         function changeImage() {
             if (document.getElementById("imgClickAndChange").name == "sampleFingerPrint") {
+                document.getElementById("scanTrue").innerHTML ="Scanning...";
                 document.getElementById("paymentText").innerHTML = "Connecting with the bank...";
-                document.getElementById("imgClickAndChange").src = "./img/fingerprint2.jpg";
-                //document.getElementById("imgClickAndChange").src = "./img/scanning.gif";
-
-                setTimeout('redirect()', 3000);
+               //document.getElementById("imgClickAndChange").src = "./img/fingerprint2.jpg";
+                document.getElementById("imgClickAndChange").src = "./img/scanning.gif";
+                setTimeout('redirect()', 4000);
             }
-            /*
-             else if (document.getElementById("imgClickAndChange").name == "scanningFingerPrint") {
-             document.getElementById("imgClickAndChange").src = "./img/scanning.gif";
-             setTimeout('redirect()', 4000);
-             }
-             */
             else {
-                setTimeout('redirect()', 3000);
+                setTimeout('redirect()', 4000);
             }
         }
-
         function redirect() {
             window.location.href = "orderSummary.html"
         }
@@ -38,8 +31,6 @@
 </head>
 
 <body>
-
-<!--<form action = "homePage.html" name="loginDetails">-->
 <table style="border: 5px">
     <td>
         <div class="app">
@@ -47,16 +38,17 @@
                 <img src="./img/logo1.png" alt="logo" class="logo">
             </div>
             <div>
-
                 <div >
                     <img class="scanImage" alt="" src="./img/fingerprint1.jpg" id="imgClickAndChange" name="sampleFingerPrint" border = "4"
                          onclick="changeImage()"/>
                 </div>
+                <h4>
+                    <div id="scanTrue"></div>
+                </h4>
                 <h5>
                     <div id="paymentText">
                         Place your finger to proceed payment...
                     </div>
-
                 </h5>
             </div>
     </td>
