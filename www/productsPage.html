@@ -2,10 +2,6 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>Touch Pouch</title>
 
@@ -15,13 +11,13 @@
             if (document.getElementById(id).name == id+"clicked") {
                 document.getElementById("emptyCartMsg").innerHTML="";
                 count--;
-                document.getElementById(id).src = "./img/"+id+".png";
+                document.getElementById(id).src = "./img/"+id+".jpg";
                 document.getElementById(id).name = id;
             }
             else {
                 document.getElementById("emptyCartMsg").innerHTML="";
                 count++;
-                document.getElementById(id).src = "./img/" + id + "tick.png";
+                document.getElementById(id).src = "./img/" + id + "tick.jpg";
                 document.getElementById(id).name = id + "clicked";
             }
 
@@ -37,7 +33,7 @@
         }
         function pageRedirect(){
             if(count>0){
-            window.location.href = "finalAuthenticationPage.html"
+                window.location.href = "finalAuthenticationPage.html"
             }else{
                 document.getElementById("emptyCartMsg").innerHTML="No Items selected in the cart";
             }
@@ -54,15 +50,16 @@
         <div>
             <table class="images">
                 <tr>
-                    <td><img class="images" src="./img/wall1price.png" alt="Mountain View" id="wall1price" name="wall1price" onclick="changeImage(id)"></td>
-                    <td><img class="images" src="./img/wall5price.png" alt="Mountain View" id="wall5price" name="wall5price" onclick="changeImage(id)"></td>
+                    <td><img class="images" src="./img/wall1price.jpg" alt="Mountain View" id="wall1price" name="wall1price" onclick="changeImage(id)"></td>
+                    <td><img class="images" src="./img/wall5price.jpg" alt="Mountain View" id="wall5price" name="wall5price" onclick="changeImage(id)"></td>
                 </tr>
                 <tr>
-                    <td><img class="images" src="./img/wall3price.png" alt="Mountain View" id="wall3price" name="wall3price" onclick="changeImage(id)"></td>
-                    <td><img class="images" src="./img/wall7price.png" alt="Mountain View" id="wall7price" name="wall7price" onclick="changeImage(id)"></td>
+                    <td><img class="images" src="./img/wall3price.jpg" alt="Mountain View" id="wall3price" name="wall3price" onclick="changeImage(id)"></td>
+                    <td><img class="images" src="./img/wall7price.jpg" alt="Mountain View" id="wall7price" name="wall7price" onclick="changeImage(id)"></td>
                 </tr>
             </table>
         </div>
     </div>
+</div>
 </body>
 </html>
